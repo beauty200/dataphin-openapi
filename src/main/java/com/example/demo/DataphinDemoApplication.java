@@ -22,7 +22,7 @@ public class DataphinDemoApplication {
 
         // RunTriggerNodeTest triggerNodeService = new RunTriggerNodeTest(client);
         // ListTableColumns listTableColumns = new ListTableColumns(client);
-        // ListTablesTest listTablesTest = new ListTablesTest(client);
+        ListTablesTest listTablesTest = new ListTablesTest(client);
         GetQualityRuleTest getQualityRuleTest = new GetQualityRuleTest(client);
 
         // String columnFilter = args.length > 0 ? args[0] : "id";
@@ -31,7 +31,7 @@ public class DataphinDemoApplication {
             // triggerNodeService.triggerNode();
             // List<ListTableColumnsResponse.Column> columns = listTableColumns.getPhysicalColumns(columnFilter);
             // System.out.println("列信息(" + columnFilter + "): " + columns);
-            // listTablesTest.listTables();
+            listTablesTest.listTables();
             GetQualityRuleResponse response = getQualityRuleTest.getQualityRule();
             
             System.out.println("========== 质量规则响应信息 ==========");
